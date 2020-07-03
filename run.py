@@ -13,7 +13,9 @@ while True:
 
 	if prmt == 'a':
 		c+=1
-		usrn, usrdu ,usrds = str(input("name:duration:description (separated by colons)")) 
+		usrn, usrdu ,usrds = str(input("name:duration:description (separated by colons)\n")).split(":" , 2)
 		tasks.append(Task(name=usrn, dur=usrdu, desc=usrds, ind=c))
 
-	
+print(tasks)
+
+		

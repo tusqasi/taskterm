@@ -17,7 +17,7 @@ class Task:
 		else:
 				self.desc = desc
 				
-		if len(ind)==0:
+		if len(str(ind))==0:
 			self.ind = "No Index given"
 		else:
 				self.ind = ind
