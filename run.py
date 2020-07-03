@@ -20,7 +20,7 @@ while True:
 		
 		print("all tasks:\n")
 		for task in tasks:
-			print("No.{serial}\nName:{name}\nDuration:{duration}\nDescription{description}").format(serial=,  )
+			print("No.{serial}\nName:{name}\nDuration:{duration}\nDescription{description}").format(serial=c, name=tasks[c].name, duration=tasks[c].dur, description=tasks[c].desc)
 		elif prmt == 'q':
 		break
 

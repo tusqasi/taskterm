@@ -16,7 +16,7 @@ class Task:
 			self.desc = "No Description given"
 		else:
 				self.desc = desc
-				
+#used len(x)==0 because it felt correct				
 
 	def set_name(self,name):
 		self.name = name
@@ -26,3 +26,4 @@ class Task:
 
 	def set_desc(self,desc):
 		self.desc = desc
+#these will be used when changing any value
