@@ -1,7 +1,7 @@
 class Task:
 	"""Make a task object"""
 
-	def __init__(self, name="", dur="", desc=""):
+	def __init__(self, name="", dur="", desc="",ind=0):
 		if len(name)==0:self.name = "No Name given"		
 		else:self.name = name
 
@@ -10,6 +10,8 @@ class Task:
 		
 		if len(desc)==0:self.desc = "No Description given"
 		else:self.desc = desc
+
+		self.ind= ind
 #used len(x)==0 because it felt correct				
 
 	def set_name(self,name):
@@ -21,3 +23,10 @@ class Task:
 	def set_desc(self,desc):
 		self.desc = desc
 #these will be used when changing any value
+	def add_task(ltask,co):
+		
+		usrn, usrdu ,usrds = str(input("name:duration:description\
+								 	   \n(separated by '|')\
+								 	   \n")).split("|" , 2)
+		ltask.append(Task(name=usrn, dur=usrdu, desc=usrds, ind=co))
+	
