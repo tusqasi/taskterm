@@ -21,3 +21,15 @@ class Task:
 			self.ind = "No Index given"
 		else:
 				self.ind = ind
+
+	def set_name(self,name):
+		self.name = name
+
+	def set_dur(self,dur):
+		self.dur = dur
+		
+	def set_desc(self,desc):
+		self.desc = desc
+		
+	def set_ind(self,ind):
+		self.ind = ind
