@@ -2,20 +2,14 @@ class Task:
 	"""Make a task object"""
 
 	def __init__(self, name="", dur="", desc=""):
-		if len(name)==0:
-			self.name = "No Name given"	
-		else:
-			self.name = name
+		if len(name)==0:self.name = "No Name given"		
+		else:self.name = name
 
-		if len(dur)==0:
-			self.dur = "No Duration given"
-		else:
-			self.dur = dur 
+		if len(dur)==0:self.dur = "No Duration given"
+		else:self.dur = dur 
 		
-		if len(desc)==0:
-			self.desc = "No Description given"
-		else:
-				self.desc = desc
+		if len(desc)==0:self.desc = "No Description given"
+		else:self.desc = desc
 #used len(x)==0 because it felt correct				
 
 	def set_name(self,name):
