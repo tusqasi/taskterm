@@ -1,7 +1,7 @@
 class Task:
 	"""Make a task object"""
 
-	def __init__(self, name="", dur="", desc="" , ind=""):
+	def __init__(self, name="", dur="", desc=""):
 		if len(name)==0:
 			self.name = "No Name given"	
 		else:
@@ -17,10 +17,6 @@ class Task:
 		else:
 				self.desc = desc
 				
-		if len(str(ind))==0:
-			self.ind = "No Index given"
-		else:
-				self.ind = ind
 
 	def set_name(self,name):
 		self.name = name
@@ -30,6 +26,3 @@ class Task:
 
 	def set_desc(self,desc):
 		self.desc = desc
-
-	def set_ind(self,ind):
-		self.ind = ind
