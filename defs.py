@@ -7,17 +7,17 @@ class Task:
 		else:
 			self.name = name
 
-		if len(dur)=0:
+		if len(dur)==0:
 			self.dur = "No Duration given"
 		else:
 			self.dur = dur 
 		
-		if len(desc)=0:
+		if len(desc)==0:
 			self.desc = "No Description given"
 		else:
 				self.desc = desc
 				
-		if len(ind)=0:
+		if len(ind)==0:
 			self.ind = "No Index given"
 		else:
 				self.ind = ind
@@ -27,9 +27,9 @@ class Task:
 
 	def set_dur(self,dur):
 		self.dur = dur
-		
+
 	def set_desc(self,desc):
 		self.desc = desc
-		
+
 	def set_ind(self,ind):
 		self.ind = ind
