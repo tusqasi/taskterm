@@ -15,7 +15,7 @@ while True: #main program loop
 		c+=1
 		Task.add_task(tasks,c) 
 		#appends a task to tasks
-		
+
 	elif prmt == 'l':
 		if c == 0: print("No tasks")	# careful here
 		
@@ -29,8 +29,9 @@ while True: #main program loop
 					   			  name=taskl.name, 
 					   			  duration=taskl.dur,
 					   			  description=taskl.desc))
-				sleep(0.4)
+				sleep(0.5)
 	elif prmt == 'q':
+		print("Bye User")
 		break
 
 	elif prmt == 'c':
