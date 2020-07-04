@@ -7,7 +7,7 @@ tasks = [] #
 
 while True: #main program loop
 	ct = strftime("%H-%M", gmtime())
-	prmt = str(input("'a' for adding new task\
+	prmt = str(input("'a' for adding new task \a \
 					\n'l' for listing all tasks\
 					\n'c' for changing a task\
 					\n'q' for exiting program\n")) 
@@ -48,5 +48,5 @@ while True: #main program loop
 		print("{} not defined".format(prmt))
 
 	for taskt in tasks:
-		pass
-
+		if (ct.split("-",1) - taskt.it.split("-",1) == [0,0]):
+			
