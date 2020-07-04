@@ -1,6 +1,7 @@
 from defs import Task
 from time import sleep
 
+
 c = 0      #initializing vars
 tasks = [] #
 
